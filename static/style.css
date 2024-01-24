@@ -1,65 +1,81 @@
+/* Archivo: static/style.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #291ea8;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 2em; /* Ajusta el padding según sea necesario */
+    height: 200px; /* Ajusta la altura según sea necesario */
+    box-sizing: border-box; /* Incluye el padding en el cálculo de la altura */
 }
 
-h1 {
-    margin: 0;
+nav {
+    background-color: #f6f3f3;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 2;
+    padding: 0;
+    background-color: #f7f1f1; /* Fondo gris oscuro */
+    overflow: hidden;
+    text-align: center; /* Centra los elementos horizontalmente */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el espacio entre elementos según sea necesario */
+
+}
+
+nav a {
+    display: block;
+    
+    padding: 1em;
+    text-decoration: none;
+    color: #3829aa; /* Texto blanco */
+}
+
+nav a:hover {
+    background-color: #d2cdcd; /* Cambio de color al pasar el ratón */
 }
 
 section {
-    padding: 20px;
+    margin: 2em;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
 }
+
+section h2 {
+   /* border-bottom: 2px solid #333;*/
+    padding-bottom: 0.5em;
+}
+
+.contact-info {
+    position: absolute;
+    top: 10px; /* Ajusta según sea necesario */
+    right: 10px; /* Ajusta según sea necesario */
+    color: #555; /* Color del texto */
+}
+
+
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-nav {
-    background-color: #333;
-    padding: 10px;
+    padding: 1em;
+    margin-top: 2em; /* Ajusta este valor según sea necesario */
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-    margin-right: 20px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease-in-out;
-}
-
-a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-a:hover {
-    border-bottom: 2px solid #fff;
-}

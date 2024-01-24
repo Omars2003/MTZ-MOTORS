@@ -1,29 +1,36 @@
+<!-- Archivo: templates/index.html -->
+
 <!DOCTYPE html>
 <html lang="es">
-
-<nav>
-    <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/servicios">Servicios</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-    </ul>
-</nav>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
-    <title>Mi Negocio de Mantenimiento de Motores Eléctricos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title> Mantenimiento de Motores Eléctricos</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+        <!-- Agrega tu número de teléfono debajo y a la derecha del encabezado -->
+        <!-- Agrega tu número de teléfono debajo y a la derecha del encabezado -->
+        <div class="contact-info">
+            <p><a href="https://wa.me/527221181100" target="_blank">Contacto por WhatsApp: +52 722 118 1100</a></p>
+        </div>
+    </nav>
+
     <header>
-        <h1>Mantenimiento y Reparación de Motores Eléctricos asistido po computadors</h1>
+        <h1>Mantenimiento y Reparación de Motores Eléctricos</h1>
         <p>Embobinados MTZ centro de servicio</p>
     </header>
 
     <section id="services">
         <h2>Nuestros Servicios</h2>
         <ul>
-            <li>Mantenimiento  preventivo asistido por computadora</li>
+            <li>Mantenimiento preventivo asistido por computadora</li>
             <li>Mantenimiento Preventivo</li>
             <li>Embobinado y Reparación de Motores Eléctricos</li>
             <li>Monitoreo, Inspección y Diagnóstico con Inteligencia artificial</li>
@@ -45,6 +52,7 @@
             Correo Electrónico: <strong>tucorreo@example.com</strong>
         </address>
     </section>
+
 
     <footer>
         <p>&copy; 2024 Mi Negocio de Mantenimiento de Motores Eléctricos</p>
