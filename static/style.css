@@ -12,15 +12,32 @@ header {
     color: #fff;
     text-align: center;
     padding: 2em; /* Ajusta el padding según sea necesario */
-    height: 200px; /* Ajusta la altura según sea necesario */
+    height: 210px; /* Ajusta la altura según sea necesario */
     box-sizing: border-box; /* Incluye el padding en el cálculo de la altura */
 }
+h1 {
+    font-size: 60px; /* Tamaño de fuente más grande */
+    font-family: Arial, sans-serif; /* Cambio de tipo de fuente */
+}
+
+
+/* En tu archivo style.css */
+h2 {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Cambio de tipo de fuente */
+}
+
 
 nav {
     background-color: #f6f3f3;
     overflow: hidden;
 }
 
+.logo img {
+    height: 100px; /* Tamaño deseado para el logo */
+    display: block; /* Para centrar verticalmente */
+    margin: auto; /* Para centrar verticalmente */
+}
 nav ul {
     list-style: none;
     margin: 2;
@@ -77,5 +94,81 @@ footer {
     text-align: center;
     padding: 1em;
     margin-top: 2em; /* Ajusta este valor según sea necesario */
+}
+
+#titulo-servicios {
+    text-align: center; /* Centra el texto */
+    font-size: 40px; /* Aumenta el tamaño de la letra */
+}
+
+li img {                    /*IMAGENES*/
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantén la proporción de aspecto */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+/* En tu archivo style.css */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Una columna con ancho mínimo de 200px */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* En tu archivo style.css */
+/* En tu archivo style.css */
+/* En tu archivo style.css */
+#services {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos flexibles */
+}
+
+.service {
+    display: flex;
+    flex-direction: row; /* Establece la dirección de los elementos flexibles */
+    margin-bottom: 20px; /* Espacio entre los servicios */
+}
+
+.service img {
+    width: 100px; /* Ancho deseado para la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y la información del servicio */
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos flexibles */
+}
+
+/* Invierte el orden de los elementos en los servicios impares */
+.service:nth-child(odd) img {
+    order: 2;
+}
+
+.service:nth-child(odd) .service-info {
+    order: 1;
+}
+
+
+
+
+
+
+#Trabajos {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 25px 0; /* Espaciado interno para la sección */
+    background-color: #2ba3b84d; /* Color de fondo de la sección */
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en la fila */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    padding: 0 20px; /* Espaciado interno para los extremos de la sección */
+}
+
+.work {
+    flex: 1; /* Ocupa el mismo ancho */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border: 1px; /* Borde para separar los cuadros */
+    padding: 10px; /* Espaciado interno para los cuadros */
 }
 

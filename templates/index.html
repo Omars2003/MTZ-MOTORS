@@ -6,8 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title> Mantenimiento de Motores Eléctricos</title>
+    <link rel="icon" href="static/ROCA1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="static/ROCA1.png" type="image/x-icon">
+
+
+  
+    <title>ROCA - Embobinados y Motores</title>
+    <div class="logo">
+        <img src="static/ROCA1.png" alt="Logo de tu empresa">
+    </div>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -23,20 +32,48 @@
     </nav>
 
     <header>
-        <h1>Mantenimiento y Reparación de Motores Eléctricos</h1>
-        <p>Embobinados MTZ centro de servicio</p>
+        <h1>Taller de reparación de motores electricos </h1>
+        <h2>Reparación, rebobinado y mantenimiento </h2>
     </header>
+    
+    <section id="Trabajos">
+        <h2>Trabajos</h2>
+        <div class="work-container">
+            <div class="work">
+                <h3>REPARACION</h3>
+                <p>Descripción del Trabajo 1...</p>
+            </div>
+            <div class="work">
+                <h3>REBOBINADO</h3>
+                <p>Descripción del Trabajo 2...</p>
+            </div>
+            <div class="work">
+                <h3>MANTENIMIENTO</h3>
+                <p>Descripción del Trabajo 3...</p>
+            </div>
+        </div>
+    </section>
+    
 
     <section id="services">
         <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Mantenimiento preventivo asistido por computadora</li>
-            <li>Mantenimiento Preventivo</li>
-            <li>Embobinado y Reparación de Motores Eléctricos</li>
-            <li>Monitoreo, Inspección y Diagnóstico con Inteligencia artificial</li>
-            <li>Optimización de Eficiencia</li>
-        </ul>
+        <div class="service">
+            <img src="static/ROCA1.png" alt="Servicio 1">
+            <div class="service-info">
+                <h3>Mantenimiento preventivo asistido por computadora</h3>
+                <p>Descripción del servicio aquí...</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="static/ROCA1.png" alt="Servicio 2">
+            <div class="service-info">
+                <h3>Otro servicio</h3>
+                <p>Descripción del otro servicio aquí...</p>
+            </div>
+        </div>
+        <!-- Repite para los demás servicios -->
     </section>
+
 
     <section id="about-us">
         <h2>Sobre Nosotros</h2>
@@ -55,7 +92,7 @@
 
 
     <footer>
-        <p>&copy; 2024 Mi Negocio de Mantenimiento de Motores Eléctricos</p>
+        <p>&copy; ROCA Embobinados y Motores S.A de C.V</p>
     </footer>
 </body>
 </html>
