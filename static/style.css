@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #291ea8;
+    background-color: #312897;
     color: #fff;
     text-align: center;
     padding: 2em; /* Ajusta el padding según sea necesario */
@@ -16,8 +16,12 @@ header {
     box-sizing: border-box; /* Incluye el padding en el cálculo de la altura */
 }
 h1 {
-    font-size: 60px; /* Tamaño de fuente más grande */
+    font-size: 45px; /* Tamaño de fuente más grande */
     font-family: Arial, sans-serif; /* Cambio de tipo de fuente */
+}
+header h1,  header h3 {
+    margin: 0; /* Elimina el margen superior e inferior */
+    padding: 0; /* Elimina el relleno */
 }
 
 
@@ -165,7 +169,8 @@ li img {                    /*IMAGENES*/
     text-align: left;
 }
 h4
-{font-size: 42px;
+{font-size: 40px;
+    text-align: center;
 
 }
 
@@ -184,4 +189,37 @@ h3 {
 p {
     font-size: 18px; /* Tamaño de letra más grande para el texto */
     line-height: 1.6; /* Ajuste del espaciado entre líneas */
+}
+
+
+/* En tu archivo style.css */
+#otros-servicios {
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+}
+
+#otros-servicios h2 {
+    font-size: 28px; /* Tamaño de letra más grande para el encabezado */
+    margin-bottom: 20px; /* Espacio inferior entre el encabezado y la lista */
+}
+
+.two-column-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-column-list li {
+    flex: 0 0 calc(50% - 10px); /* Ancho de 50% con espacio entre columnas */
+    margin-bottom: 10px; /* Espacio inferior entre elementos */
+    padding: 5px; /* Espaciado interno */
+}
+
+
+#about-us {
+    text-align: center; /* Para centrar el contenido */
+}
+
+#about-us p {
+    text-align: justify; /* Para justificar el texto */
+    margin: 0 auto; /* Para centrar el texto */
+    max-width: 1000px; /* Establece el ancho máximo del texto para que no se extienda demasiado */
 }
