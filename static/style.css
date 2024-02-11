@@ -130,7 +130,7 @@ li img {                    /*IMAGENES*/
 }
 
 .service img {
-    width: 100px; /* Ancho deseado para la imagen */
+    width: 400px; /* Ancho deseado para la imagen */
     margin-right: 20px; /* Espacio entre la imagen y la información del servicio */
 }
 

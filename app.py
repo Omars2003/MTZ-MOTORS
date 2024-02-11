@@ -7,10 +7,19 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+
+
 # Ruta de la página de servicios
 @app.route('/servicios')
 def servicios():
     return render_template('servicios.html')
+
+
+
+@app.route('/informacion')
+def informacion():
+    return render_template('informacion.html') 
+
 
 
 if __name__ == '__main__':
