@@ -223,3 +223,30 @@ p {
     margin: 0 auto; /* Para centrar el texto */
     max-width: 1000px; /* Establece el ancho máximo del texto para que no se extienda demasiado */
 }
+
+
+
+
+
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    color: #333;
+}
+
+.contact-section p {
+    color: #666;
+}
+
+.contact-info p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.address-info {
+    font-size: 16px;
+    color: #333;
+}
