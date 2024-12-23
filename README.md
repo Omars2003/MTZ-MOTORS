@@ -1,2 +1,2 @@
 # MTZ-MOTORS
-Repositorio que tiene la pagina web  de mtz motors.
+Este repositorio contiene el codigo de la pagina web de una empresa que se dedica al mantenimiento industrial, Roca Motores y Embobinados.
